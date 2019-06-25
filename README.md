@@ -1,6 +1,6 @@
 # Vidiff
 
-Vidiff is a visual regression testing tools that compares screenshots of your app between different stages (eg: production vs staging) accross major operating systems, browsers and screen resolutions.
+[Vidiff](https://vidiff.com) is a visual regression testing tools that compares screenshots of your app between different stages (eg: production vs staging) accross major operating systems, browsers and screen resolutions.
 
 ## Getting started
 
@@ -119,7 +119,7 @@ If you want to hide your source from us you can create a repository containing o
 
 To launch builds automatically, a REST API is available.
 
-To authenticate, use the account key and access token given in [your account page](https://app.vidiff.com/account).
+To authenticate, use the account key and secret available in [your account page](https://app.vidiff.com/account).
 
 ### Create build
 

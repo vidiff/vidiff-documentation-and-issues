@@ -155,3 +155,7 @@ To authenticate, use the account key and secret available in [your account page]
   "buildUrl": "https://app.vidiff.com/project/~/vidiff-demo-website/build/1"
 }
 ```
+
+## Contact
+
+Get it touch at [hello@vidiff.com](mailto:hello@vidiff.com). We'd love to receive news from you.

@@ -4,7 +4,7 @@
 
 ## Getting started
 
-First, [create your Vidiff account](https://app.vidiff.com/signup). Wether you want to use GitHub or not is up to you. If you choose not to use GitHub, create a new Project that points to your app's repository.
+First, [create your Vidiff account](https://app.vidiff.com/signup). Whether you want to use GitHub or not is up to you. If you choose not to use GitHub, create a new Project that points to your app's repository.
 
 If you do not want to share your code with Vidiff, read the [section about hidding your source](#foo).
 
@@ -126,6 +126,7 @@ To authenticate, use the account key and secret available in [your account page]
 `POST https://api.vidiff.com/rest/create-build`
 
 #### Request body
+
 ```json
 {
   "accountKey": "...",

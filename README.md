@@ -109,6 +109,12 @@ Records a screenshot to be compared by Vidiff.
 
 A string containing the URL your scenario will execute against. Use it to transition routes. It should be different accross stages.
 
+## Using Vidiff to run tests
+
+You can also use Vidiff to run your application tests on multiple platforms and browsers with statements like `assert` and `expect` or `should`.
+
+At the moment, the [wd driver](https://github.com/admc/wd) and the `assert` NodeJS library allow such statements.
+
 ## Hidding your source
 
 At Vidiff we only clone your repository, checkout the two branches you provided, read the configuration file and import the scenarios handlers. The repository folder is then deleted, the rest of your source is untouched. We never write to your repository.

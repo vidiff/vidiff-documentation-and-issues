@@ -140,8 +140,8 @@ To authenticate, use the account key and secret available in [your account page]
   "projectName": "vidiff-demo-website",
   "baselineBranch": "master",
   "comparisonBranch": "dev",
-  "baselineUrl": "http://vidiff-demo-website-baseline.s3-website.eu-west-3.amazonaws.com",
-  "comparisonUrl": "http://vidiff-demo-website-comparison.s3-website.eu-west-3.amazonaws.com"
+  "baselineUrl": "https://master.demo.vidiff.com",
+  "comparisonUrl": "https://dev.demo.vidiff.com"
 }
 ```
 
@@ -158,4 +158,4 @@ To authenticate, use the account key and secret available in [your account page]
 
 ## Contact
 
-Get it touch at [hello@vidiff.com](mailto:hello@vidiff.com). We'd love to receive news from you.
+Get it touch at [hello@vidiff.com](mailto:hello@vidiff.com). We love to here news from our users.

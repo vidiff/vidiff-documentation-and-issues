@@ -54,7 +54,7 @@ It corresponds to the `entry` parameter in your scenario definition in your `.vi
 
 ```js
 async function scenario(browser, takeScreenshot, baseUrl) {
-  // Go to a given URL
+  // Go to any URL
   await browser.get(baseUrl + '/signin')
 
   // Take your first screenshot
@@ -65,14 +65,12 @@ async function scenario(browser, takeScreenshot, baseUrl) {
   const passwordInput = await browser.elementByCssSelector('#password')
   const submitButton = await browser.elementByCssSelector('#submit')
 
-  // Type data into input
+  // Type data into inputs
   await emailInput.type('user@vidiff.com'.split(''))
   await passwordInput.type('password1234'.split(''))
 
   // Click a button
   await submitButton.click()
-
-  url = await browser.url()
 
   // Take the second screenshot
   await takeScreenshot('Home', 'The main route')

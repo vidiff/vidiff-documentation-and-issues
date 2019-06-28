@@ -123,7 +123,7 @@ If you want to hide your source from us you can create a repository containing o
 
 To launch builds automatically, a REST API is available.
 
-To authenticate, use the account key and secret available in [your account page](https://app.vidiff.com/account).
+To authenticate, use the account API token available in [your account page](https://app.vidiff.com/account).
 
 ### Create build
 
@@ -133,8 +133,7 @@ To authenticate, use the account key and secret available in [your account page]
 
 ```json
 {
-  "accountKey": "...",
-  "accountSecret": "...",
+  "accountToken": "...",
   "projectName": "vidiff-demo-website",
   "baselineBranch": "master",
   "comparisonBranch": "dev",

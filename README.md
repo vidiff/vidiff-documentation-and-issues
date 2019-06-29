@@ -2,6 +2,16 @@
 
 [Vidiff](https://vidiff.com) is a visual regression testing tools that compares screenshots of your app between different stages (eg: production vs staging) accross major operating systems, browsers and screen resolutions.
 
+## Prerequisites
+
+Vidiff assumes your application is mature enough to be deployed on at least two stages. It also assumes that each stage corresponds to a git repository branch.
+
+Example:
+- Production (branch master): https://example.com
+- Staging (branch dev): https://staging.example.com
+
+Once those prerequisites are defined Vidiff starts comparing changes on both stages.
+
 ## Getting started
 
 First, [create your Vidiff account](https://app.vidiff.com/signup). Whether you want to use GitHub or not is up to you. If you choose not to use GitHub, create a new Project that points to your app's repository.
@@ -10,7 +20,7 @@ If you do not want to share your code with Vidiff, read the [section about hiddi
 
 ## Defining a configuration
 
-The configuration file must be placed at the root of your repository. It must be named `.vidiffrc`.
+The configuration file must be placed at the root of your repository. It must be named `.vidiffrc`. It must be present on both considered branches.
 
 ```json
 {
@@ -50,7 +60,7 @@ The list of available `screen-resolution` can be found [here](https://testingbot
 
 ## Defining a scenario function
 
-It corresponds to the `entry` parameter in your scenario definition in your `.vidiffrc` file.
+It corresponds to the `entry` parameter in your scenario definition in your `.vidiffrc` file. It must be present on both compared branches but can be different as new features often mean new visual and functionnal tests.
 
 ```js
 async function scenario(browser, takeScreenshot, baseUrl) {
@@ -127,7 +137,7 @@ To authenticate, use the account API token available in [your account page](http
 
 ### Create build
 
-`POST https://api.vidiff.com/rest/create-build`
+`POST https://api.vidiff.com/rest/build`
 
 #### Request body
 

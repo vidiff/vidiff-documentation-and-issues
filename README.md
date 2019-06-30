@@ -117,7 +117,7 @@ Records a screenshot to be compared by Vidiff.
 
 A string containing the URL your scenario will execute against. Use it to transition routes. It should be different accross stages.
 
-## Using Vidiff to run tests
+## Using Vidiff to run functionnal tests
 
 You can also use Vidiff to run your application tests on multiple platforms and browsers with statements like `assert` and `expect` or `should`.
 

@@ -24,6 +24,10 @@ The configuration file must be placed at the root of your repository. It must be
 
 ```json
 {
+  "branchToUrlMapping": {
+    "master": "https://example.com",
+    "dev": "https://staging.example.com"
+  },
   "scenarios": [
     {
       "name": "Website tour",
@@ -35,9 +39,19 @@ The configuration file must be placed at the root of your repository. It must be
           "version": "75",
         },
         {
+          "platform": "MOJAVE",
+          "browsername": "safari",
+          "version": "12"
+        },
+        {
           "platform": "WIN10",
           "browsername": "microsoftedge",
           "version": "18",
+        },
+        {
+          "platform": "WIN10",
+          "browsername": "internet explorer",
+          "version": "11"
         },
         {
           "platform": "LINUX",
@@ -45,18 +59,44 @@ The configuration file must be placed at the root of your repository. It must be
           "version": "67",
           "screen-resolution": "800x600"
         }
-        // TODO: update for mobile devices
       ]
     }
   ]
 }
 ```
 
-You can run multiple scenarios in one build. Scenario names must be unique.
+### scenarios
+
+You can run multiple scenarios in one build.
+
+`name`: A unique name for your scenario. Required.
+
+`entry`: The scenario function path relative to the root of your repository.
+
+`capabilities`: An array describing the browsers you want your scenario to be tested uppon.
 
 The complete list of `platform`, `browsername` and `version` can be found [here](https://testingbot.com/support/getting-started/browsers.html).
 
 The list of available `screen-resolution` can be found [here](https://testingbot.com/support/other/test-options#screenresolution). The default value is `1920x1080`.
+
+### branchToUrlMapping
+
+Define for each branch which URL to run tests against.
+
+You can also define `branchToUrlMapping` under `scenarios[]` to specify particular URLs for each scenario.
+
+### pullRequestUrlTemplate
+
+For GitHub integration users only.
+
+Set for each pull request an URL. The value `${n}` will be replaced by the pull request number.
+
+example:
+```js
+"pullRequestUrlTemplate": "https://pr-${n}.example.com" // PR 123 --> https://pr-123.example.com
+```
+
+You can also define `pullRequestUrlTemplate` under `scenarios[]` to specify a particular pull request URL template for each scenario.
 
 ## Defining a scenario function
 

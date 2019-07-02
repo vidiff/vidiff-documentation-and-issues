@@ -35,29 +35,36 @@ The configuration file must be placed at the root of your repository. It must be
       "capabilities": [
         {
           "platform": "WIN10",
-          "browsername": "chrome",
-          "version": "75",
+          "browserName": "chrome",
+          "version": "75"
         },
         {
           "platform": "MOJAVE",
-          "browsername": "safari",
+          "browserName": "safari",
           "version": "12"
         },
         {
-          "platform": "WIN10",
-          "browsername": "microsoftedge",
-          "version": "18",
+          "platform": "LINUX",
+          "browserName": "firefox",
+          "version": "67",
+          "screen-resolution": "800x600"
         },
         {
           "platform": "WIN10",
-          "browsername": "internet explorer",
+          "browserName": "microsoftedge",
+          "version": "18"
+        },
+        {
+          "platform": "VISTA",
+          "browserName": "internet explorer",
           "version": "11"
         },
         {
-          "platform": "LINUX",
-          "browsername": "firefox",
-          "version": "67",
-          "screen-resolution": "800x600"
+          "platform": "ANDROID",
+          "platformName": "Android",
+          "deviceName": "Pixel 2",
+          "browserName": "Chrome",
+          "version": "7.1"
         }
       ]
     }

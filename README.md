@@ -199,6 +199,7 @@ For every project, two options are available:
 
 - Use the [REST API](#rest-api)
 - Launch a build manually in the Vidiff app:
+
 ![image](https://user-images.githubusercontent.com/4154003/60613909-2455c200-9dcc-11e9-9a0d-973efefb1e3e.png)
 
 For GitHub-integrated projects, pushing a commit to an opened pull request will trigger a new build.

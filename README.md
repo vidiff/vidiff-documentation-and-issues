@@ -20,7 +20,7 @@ You will be prompted for an integration:
 - If you choose GitHub, your repositories will be imported.
 - If you choose no integration, create a new Project that points to your app's repository:
 
-![image](https://user-images.githubusercontent.com/4154003/60612727-a395c680-9dc9-11e9-81bc-07e5e8d2bed9.png)
+![image](https://user-images.githubusercontent.com/4154003/60613839-fe302200-9dcb-11e9-8881-d9b8cb46f85e.png)
 
 If you do not want to share your code with Vidiff, read the [section about hidding your source](#hidding-your-source).
 
@@ -197,8 +197,9 @@ At the moment, the [wd driver](https://github.com/admc/wd) and the `assert` Node
 
 For every project, two options are available:
 
-- Launch a build manually in the Vidiff app: ![image](https://user-images.githubusercontent.com/4154003/60613643-9aa5f480-9dcb-11e9-98fd-e9c0e71f5d12.png)
 - Use the [REST API](#rest-api)
+- Launch a build manually in the Vidiff app:
+![image](https://user-images.githubusercontent.com/4154003/60613909-2455c200-9dcc-11e9-9a0d-973efefb1e3e.png)
 
 For GitHub-integrated projects, pushing a commit to an opened pull request will trigger a new build.
 

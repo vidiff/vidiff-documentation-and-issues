@@ -10,7 +10,7 @@ Example:
 - Production (branch master): https://example.com
 - Staging (branch dev): https://staging.example.com
 
-Once those prerequisites are defined Vidiff starts comparing changes on both stages.
+Once those prerequisites are defined Vidiff starts comparing changes across both stages.
 
 ## Getting started
 

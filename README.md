@@ -116,8 +116,9 @@ The list of available `screen-resolution` for desktop capabilities can be found 
 It corresponds to the `entry` parameter in your scenario definition in your `.vidiffrc` file. It must be present on both compared branches but can be different as new features often mean new visual and functionnal tests.
 
 ```js
-async function scenario(browser, takeScreenshot, baseUrl) {
+async function scenario(browser, baseUrl, log) {
   // Go to any URL
+  // The baseUrl is defined in your .vidiffrc file under "branchToUrlMapping"
   await browser.get(baseUrl + '/signin')
 
   // Take your first screenshot
@@ -145,6 +146,14 @@ async function scenario(browser, takeScreenshot, baseUrl) {
 
   // Take the third screenshot
   await takeScreenshot('About', 'The about page')
+
+  // Log anything
+  log('This log will appear on the build page')
+
+  // Conditionnal testing
+  if (browser.capability.platformName === 'iOS') {
+    // ...
+  }
 }
 
 module.exports = scenario
@@ -156,9 +165,13 @@ At the moment scenario functions cannot import external modules (installed with 
 
 #### browser
 
-See the [wd documentation](https://github.com/admc/wd). In a future version a custom driver will be available.
+See the [wd documentation](https://github.com/admc/wd). For security reasons we removed some of the methods.
 
-#### takeScreenshot(name<string>, description<string>)
+#### browser.capability
+
+The considered capability as defined in your `.vidiffrc` file.
+
+#### browser.takeScreenshot(name<string>, description<string>)
 
 Records a screenshot to be compared by Vidiff.
 
@@ -169,6 +182,10 @@ Records a screenshot to be compared by Vidiff.
 ### baseUrl
 
 A string containing the URL your scenario will execute against. Use it to transition routes. It should be different accross stages.
+
+### log
+
+A log function. Logs appear on the build page in our app. Logs are prefixed with a string to identify the capability.
 
 ## Using Vidiff to run functionnal tests
 

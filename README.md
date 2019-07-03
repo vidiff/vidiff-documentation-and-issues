@@ -107,9 +107,9 @@ You can run multiple scenarios in one build.
 
 `capabilities`: An array describing the browsers you want your scenario to be tested uppon.
 
-The complete list of `platform`, `browsername` and `version` can be found [here](https://testingbot.com/support/getting-started/browsers.html).
+The complete list of capabilities can be found [here](https://testingbot.com/support/getting-started/browsers.html).
 
-The list of available `screen-resolution` can be found [here](https://testingbot.com/support/other/test-options#screenresolution). The default value is `1920x1080`.
+The list of available `screen-resolution` for desktop capabilities can be found [here](https://testingbot.com/support/other/test-options#screenresolution). The default value is `1920x1080`.
 
 ## Defining a scenario function
 

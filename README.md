@@ -244,6 +244,10 @@ The project id is available in the project page.
 }
 ```
 
+## Bugs and new feature requests
+
+Please improve Vidiff by reporting bugs and requesting new features. To do so, [start a new issue](https://github.com/vidiff/vidiff-documentation-and-issues/issues/new) describing bug or feature need.
+
 ## Contact
 
-Get it touch at [hello@vidiff.com](mailto:hello@vidiff.com). We love to here news from our users.
+Get it touch at [hello@vidiff.com](mailto:hello@vidiff.com) or [start a new issue](https://github.com/vidiff/vidiff-documentation-and-issues/issues/new). We love to here news from our users.

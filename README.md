@@ -167,11 +167,11 @@ At the moment scenario functions cannot import external modules (installed with 
 
 See the [wd documentation](https://github.com/admc/wd). For security reasons we removed some of the methods.
 
-#### browser.capability
+##### browser.capability
 
 The considered capability as defined in your `.vidiffrc` file.
 
-#### browser.takeScreenshot(name<string>, description<string>)
+##### browser.takeScreenshot(name<string>, description<string>)
 
 Records a screenshot to be compared by Vidiff.
 
@@ -179,11 +179,11 @@ Records a screenshot to be compared by Vidiff.
 
 **description**: Optional. A description of your screenshot.
 
-### baseUrl
+#### baseUrl
 
 A string containing the URL your scenario will execute against. Use it to transition routes. It should be different accross stages.
 
-### log
+#### log
 
 A log function. Logs appear on the build page in our app. Logs are prefixed with a string to identify the capability.
 

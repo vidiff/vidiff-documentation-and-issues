@@ -14,7 +14,13 @@ Once those prerequisites are defined Vidiff starts comparing changes on both sta
 
 ## Getting started
 
-First, [create your Vidiff account](https://app.vidiff.com/signup). Whether you want to use GitHub or not is up to you. If you choose not to use GitHub, create a new Project that points to your app's repository.
+First, [create your Vidiff account](https://app.vidiff.com/signup).
+
+You will be prompted for an integration:
+- If you choose GitHub, your repositories will be imported.
+- If you choose no integration, create a new Project that points to your app's repository:
+
+![image](https://user-images.githubusercontent.com/4154003/60612727-a395c680-9dc9-11e9-81bc-07e5e8d2bed9.png)
 
 If you do not want to share your code with Vidiff, read the [section about hidding your source](#foo).
 

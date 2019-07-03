@@ -204,8 +204,6 @@ For every project, two options are available:
 
 For GitHub-integrated projects, pushing a commit to an opened pull request will trigger a new build.
 
-### GitHub integration
-
 ## Hidding your source
 
 At Vidiff we only clone your repository, checkout the two branches you provided, read the configuration file and import the scenarios handlers. The repository folder is then deleted, the rest of your source is untouched. We never write to your repository.

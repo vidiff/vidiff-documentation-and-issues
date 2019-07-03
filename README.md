@@ -193,9 +193,7 @@ To authenticate, use the account API token available in [your account page](http
   "accountToken": "...",
   "projectName": "vidiff-demo-website",
   "baselineBranch": "master",
-  "comparisonBranch": "dev",
-  "baselineUrl": "https://master.demo.vidiff.com",
-  "comparisonUrl": "https://dev.demo.vidiff.com"
+  "comparisonBranch": "dev"
 }
 ```
 

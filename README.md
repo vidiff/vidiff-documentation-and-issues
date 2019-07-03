@@ -22,7 +22,7 @@ You will be prompted for an integration:
 
 ![image](https://user-images.githubusercontent.com/4154003/60612727-a395c680-9dc9-11e9-81bc-07e5e8d2bed9.png)
 
-If you do not want to share your code with Vidiff, read the [section about hidding your source](#foo).
+If you do not want to share your code with Vidiff, read the [section about hidding your source](#hidding-your-source).
 
 ## Defining a configuration
 
@@ -192,6 +192,17 @@ A log function. Logs appear on the build page in our app. Logs are prefixed with
 You can also use Vidiff to run your application tests on multiple platforms and browsers with statements like `assert` and `expect` or `should`.
 
 At the moment, the [wd driver](https://github.com/admc/wd) and the `assert` NodeJS library allow such statements.
+
+## Launching your first build
+
+For every project, two options are available:
+
+- Launch a build manually in the Vidiff app: ![image](https://user-images.githubusercontent.com/4154003/60613643-9aa5f480-9dcb-11e9-98fd-e9c0e71f5d12.png)
+- Use the [REST API](#rest-api)
+
+For GitHub-integrated projects, pushing a commit to an opened pull request will trigger a new build.
+
+### GitHub integration
 
 ## Hidding your source
 

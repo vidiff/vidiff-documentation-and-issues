@@ -78,20 +78,6 @@ The configuration file must be placed at the root of your repository. It must be
 }
 ```
 
-### scenarios
-
-You can run multiple scenarios in one build.
-
-`name`: A unique name for your scenario. Required.
-
-`entry`: The scenario function path relative to the root of your repository.
-
-`capabilities`: An array describing the browsers you want your scenario to be tested uppon.
-
-The complete list of `platform`, `browsername` and `version` can be found [here](https://testingbot.com/support/getting-started/browsers.html).
-
-The list of available `screen-resolution` can be found [here](https://testingbot.com/support/other/test-options#screenresolution). The default value is `1920x1080`.
-
 ### branchToUrlMapping
 
 Define for each branch which URL to run tests against.
@@ -110,6 +96,20 @@ example:
 ```
 
 You can also define `pullRequestUrlTemplate` under `scenarios[]` to specify a particular pull request URL template for each scenario.
+
+### scenarios
+
+You can run multiple scenarios in one build.
+
+`name`: A unique name for your scenario. Required.
+
+`entry`: The scenario function path relative to the root of your repository.
+
+`capabilities`: An array describing the browsers you want your scenario to be tested uppon.
+
+The complete list of `platform`, `browsername` and `version` can be found [here](https://testingbot.com/support/getting-started/browsers.html).
+
+The list of available `screen-resolution` can be found [here](https://testingbot.com/support/other/test-options#screenresolution). The default value is `1920x1080`.
 
 ## Defining a scenario function
 

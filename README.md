@@ -95,7 +95,7 @@ example:
 "pullRequestUrlTemplate": "https://pr-${n}.example.com" // PR 123 --> https://pr-123.example.com
 ```
 
-You can also define `pullRequestUrlTemplate` under `scenarios[]` to specify a particular pull request URL template for each scenario.
+You can also define `pullRequestUrlTemplate` under `scenarios[]` to specify a particular pull request URL templates for each scenario.
 
 ### scenarios
 

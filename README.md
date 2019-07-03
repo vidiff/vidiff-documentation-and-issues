@@ -182,6 +182,8 @@ To launch builds automatically, a REST API is available.
 
 To authenticate, use the account API token available in [your account page](https://app.vidiff.com/account).
 
+The project id is available in the project page.
+
 ### Create build
 
 `POST https://api.vidiff.com/rest/build`
@@ -191,7 +193,7 @@ To authenticate, use the account API token available in [your account page](http
 ```json
 {
   "accountToken": "...",
-  "projectName": "vidiff-demo-website",
+  "projectId": "...",
   "baselineBranch": "master",
   "comparisonBranch": "dev"
 }

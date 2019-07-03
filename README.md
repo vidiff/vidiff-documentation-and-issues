@@ -183,7 +183,7 @@ Records a screenshot to be compared by Vidiff.
 
 A string containing the URL your scenario will execute against. Use it to transition routes. It should be different accross stages.
 
-#### log
+#### log(...messages)
 
 A log function. Logs appear on the build page in our app. Logs are prefixed with a string to identify the capability.
 

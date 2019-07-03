@@ -61,7 +61,7 @@ The configuration file must be placed at the root of your repository. It must be
           "version": "18"
         },
         {
-          "platform": "VISTA",
+          "platform": "WIN10",
           "browserName": "internet explorer",
           "version": "11"
         },

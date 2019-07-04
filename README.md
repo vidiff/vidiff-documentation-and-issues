@@ -24,6 +24,11 @@ You will be prompted for an integration:
 
 If you do not want to share your code with Vidiff, read the [section about hidding your source](#hidding-your-source).
 
+Then you can:
+- [Define your configuration file](#defining-a-configuration)
+- [Define a scenario function](#defining-a-scenario-function)
+- [Launch your fist build](#launching-your-first-build)
+
 ## Defining a configuration
 
 The configuration file must be placed at the root of your repository. It must be named `.vidiffrc`. It must be present on both considered branches.

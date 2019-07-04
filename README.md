@@ -251,7 +251,7 @@ The project id is available in the project page.
 
 ## Bugs and new feature requests
 
-Please improve Vidiff by reporting bugs and requesting new features. To do so, [start a new issue](https://github.com/vidiff/vidiff-documentation-and-issues/issues/new) describing bug or feature need.
+Please improve Vidiff by reporting bugs and requesting new features. To do so, [start a new issue](https://github.com/vidiff/vidiff-documentation-and-issues/issues/new) describing the bug or feature need.
 
 ## Contact
 

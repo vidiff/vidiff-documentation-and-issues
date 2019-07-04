@@ -118,7 +118,7 @@ The list of available `screen-resolution` for desktop capabilities can be found 
 
 ## Defining a scenario function
 
-It corresponds to the `entry` parameter in your scenario definition in your `.vidiffrc` file. It must be present on both compared branches but can be different as new features often mean new visual and functionnal tests.
+It corresponds to the `entry` parameter in your scenario definition in your `.vidiffrc` file. It must be present on both compared branches but can be different as new features often mean new visual and functionnal tests. The function will be executed once for every capability you set.
 
 ```js
 async function scenario(browser, baseUrl, log) {

@@ -24,10 +24,32 @@ You will be prompted for an integration:
 
 If you do not want to share your code with Vidiff, read the [section about hidding your source](#hidding-your-source).
 
-Then you can:
-- [Define your configuration file](#defining-a-configuration)
-- [Define a scenario function](#defining-a-scenario-function)
-- [Launch your fist build](#launching-your-first-build)
+Then to try Vidiff out checkout a new branch:
+```
+git checkout -b install-vidiff
+```
+
+Vidiff needs at least two files to work: a `.vidiffrc` configuration file and a scenario test file. You can create both using:
+```
+npx vidiff init --url https://your.application.com --entry path/to/scenario.js
+```
+Then commut and push your work.
+
+To launch your first build, grab the API token in your account page and the project ID in the project page. Then you can do:
+```
+npx vidiff create-build -t API_TOKEN -p PROJECT_ID
+```
+
+This will launch a build on a single branch, that is a build without comparison accross branches/stages. Good enough to start.
+
+## Going further
+
+To use Vidiff in full there are a few more steps you should take:
+
+- Enhance your scenario test file with a tour of your application's pages and features. [Here's how to](#defining-a-scenario-function).
+- Install Vidiff in another branch (or merge the branch you created into another), add a `branchToUrlMapping` entry in your `.vidiffrc` file in the new branch to tell Vidiff which URL to test your scenario against.
+- Launch a build that compares two stages using `npx vidiff create-build -t API_TOKEN -p PROJECT_ID --baselineBranch master --comparisonBranch dev`. Vidiff must be installed in both branches.
+- When you develop a new feature, adapt your scenario test file to make new functionnal tests and take new screenshots.
 
 ## Defining a configuration
 
@@ -200,14 +222,15 @@ At the moment, the [wd driver](https://github.com/admc/wd) and the `assert` Node
 
 ## Launching your first build
 
-For every project, two options are available:
+For every project, three options are available:
 
 - Use the [REST API](#rest-api)
+- Use the [`vidiff` NPM package](https://www.npmjs.com/package/vidiff).
 - Launch a build manually in the Vidiff app:
 
 ![image](https://user-images.githubusercontent.com/4154003/60613909-2455c200-9dcc-11e9-9a0d-973efefb1e3e.png)
 
-For GitHub-integrated projects, pushing a commit to an opened pull request will trigger a new build.
+For GitHub-integrated projects, pushing a commit to an opened pull request between branches with Vidiff installed will trigger a new build.
 
 ## Hidding your source
 

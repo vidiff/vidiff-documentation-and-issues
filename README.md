@@ -1,6 +1,6 @@
 # Vidiff
 
-[Vidiff](https://vidiff.com) is a visual regression testing tools that compares screenshots of your app between different stages (eg: production vs staging) accross major operating systems, browsers and screen resolutions.
+[Vidiff](https://vidiff.com) is a functionnal testing and visual regression testing tool that compares screenshots of your app between different stages (eg: production vs staging) accross major operating systems, browsers and screen resolutions.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ You will be prompted for an integration:
 
 If you do not want to share your code with Vidiff, read the [section about hidding your source](#hidding-your-source).
 
-Then to try Vidiff out checkout a new branch:
+Then to try Vidiff out checkout a new branch in your application's repository:
 ```
 git checkout -b install-vidiff
 ```
@@ -33,7 +33,7 @@ Vidiff needs at least two files to work: a `.vidiffrc` configuration file and a 
 ```
 npx vidiff init --url https://your.application.com --entry path/to/scenario.js
 ```
-Then commut and push your work.
+Then commit and push your work.
 
 To launch your first build, grab the API token in your account page and the project ID in the project page. Then you can do:
 ```
@@ -147,6 +147,11 @@ async function scenario(browser, baseUrl, log) {
   // Go to any URL
   // The baseUrl is defined in your .vidiffrc file under "branchToUrlMapping"
   await browser.get(baseUrl + '/signin')
+
+  // Make a functionnal test
+  const title = await browser.title()
+
+  title.should.include('Application - Sign in')
 
   // Take your first screenshot
   await takeScreenshot('Signin', 'The signin page')
